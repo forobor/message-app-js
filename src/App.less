@@ -1,0 +1,36 @@
+@import "styles/palette.less";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  background-color: @background-color;
+  width: 100vw;
+  min-height:100vh;
+  box-sizing: border-box;
+
+  .menu-bar {
+    display: flex;
+    background-color: @primary-color;
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+  }
+  .menu-item {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: @contrast-text-color;
+
+    &:hover {
+      background-color: darken(@primary-color, 5%);
+    }
+  }
+
+  .menu-item-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @contrast-text-color
+  }
+}
